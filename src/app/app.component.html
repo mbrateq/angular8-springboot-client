@@ -1,0 +1,33 @@
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="true">
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="employees" class="nav-link" routerLinkActive="active">Lista Użytkowników</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="add" class="nav-link" routerLinkActive="active">Dodaj Użytkownika</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="about" class="nav-link" routerLinkActive="active">Info</a>
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <br>
+  <h2 style="text-align: center;">{{title}}</h2>
+  <hr>
+  <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <span>Marcin Bratek @SGGW</span>
+  </div>
+</footer>
